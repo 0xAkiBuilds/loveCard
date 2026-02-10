@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now the Hard Ones ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="floating-bg"></div>
+
+<div id="hearts-container"></div>
+
+<div class="card" id="auth2Card">
+
+    <h1>Now the hard ones 💭</h1>
+    <p>These shouldn’t be hard for you.</p>
+
+    <label>What's my name?</label>
+    <select id="q0">
+        <option value="">Select</option>
+        <option value="wrong">Appukuttan</option>
+        <option value="wrong">Visal</option>
+        <option value="right">Akhil</option>
+    </select>
+
+    <label>Where was our first date?</label>
+    <select id="q1">
+        <option value="">Select</option>
+        <option value="wrong">Perinthalmanna</option>
+        <option value="right">Kozhikode</option>
+        <option value="wrong">Malappuram</option>
+    </select>
+
+    <label>What do I love most about you?</label>
+    <select id="q2">
+        <option value="">Select</option>
+        <option value="wrong">Your long Hair</option>
+        <option value="wrong">Your mesmerising Eyes</option>
+        <option value="right">Your captivating Smile</option>
+    </select>
+
+    <p style="margin-top:15px;">
+        This one isn’t about memory.<br>
+        It’s about intention.
+    </p>
+
+    <button onclick="chooseMe()">Complete ❤️</button>
+
+    <p id="auth2Error"></p>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    // Protect this page
+    if (localStorage.getItem("auth1") !== "passed") {
+      window.location.href = "index.html";
+    }
+</script>
+<!-- Congratulatory Popup -->
+<div id="congratsPopup" class="popup">
+    <div class="popup-content">
+        <p>
+            Congratulations 💖<br><br>
+            You found the way<br>
+            into my heart ❤️<br><br>
+            Are you ready<br>
+            for the big question?
+        </p>
+        <button onclick="goToBigQuestion()">I’m Ready 💕</button>
+    </div>
+</div>
+
+</body>
+</html>
