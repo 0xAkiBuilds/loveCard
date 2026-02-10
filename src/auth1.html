@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let’s Start Simple 💭</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="floating-bg"></div>
+
+<div class="card">
+    <h1>Let’s start simple 💗</h1>
+    <p>Nothing tricky… just things only you would remember.</p>
+
+    <div class="input-group">
+        <label>What date did we first kiss?</label>
+
+        <input
+                type="text"
+                id="kissDate"
+                placeholder="DD-MM-YYYY"
+        >
+    </div>
+
+    <div class="input-group">
+        <label>Where did we first hold hands?</label>
+
+        <input
+                type="text"
+                id="handPlace"
+                placeholder="Type here…"
+        >
+    </div>
+
+
+    <button onclick="validateAuth1Text()">Continue →</button>
+
+    <p id="auth1Error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

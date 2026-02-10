@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts & balloons background -->
+<div id="floating-bg"></div>
+
+<div class="card">
+    <h1>My Dearest Abhi,</h1>
+
+    <div class="letter">
+        <p>
+            Why would we need a Valentine’s Day<br>
+            to remind us of the love we share?<br>
+            When every waking moment<br>
+            begins and ends with you.
+        </p>
+
+        <p>
+            My thoughts rise with your name,<br>
+            my dreams carry your face.<br>
+            In every breath I take, I feel you,<br>
+            in every closed eye, I see you.
+        </p>
+
+        <p>
+            You are the reason behind my laughter,<br>
+            and the quiet truth in my tears.<br>
+            My days belong to you,<br>
+            my nights know only you.
+        </p>
+
+        <p>
+            When my entire life<br>
+            is already a reminder of you,<br>
+            why would I need another one?
+        </p>
+
+        <p>
+            I loved you yesterday,<br>
+            I love you today,<br>
+            and I will love you tomorrow—<br>
+            and all the days that follow. 💫
+        </p>
+
+        <p style="margin-top:24px;">
+            With Love,<br>
+            <strong>Yours,<br>Akhi</strong>
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    /* Protect letter: only after agreement + yes */
+    if (
+      localStorage.getItem("agreementAccepted") !== "true" ||
+      localStorage.getItem("auth2") !== "passed"
+    ) {
+      window.location.href = "entry.html";
+    }
+</script>
+
+</body>
+</html>

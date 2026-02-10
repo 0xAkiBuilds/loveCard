@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    if (localStorage.getItem("auth2") !== "passed") {
+      window.location.href = "entry.html";
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Question 💍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="floating-bg"></div>
+
+<div class="card">
+    <h3>Valentine’s Day comes once a year…</h3>
+    <h3>but I’m thinking long-term.</h3>
+
+    <h1>Will you be my WIFEY? 💍 💖</h1>
+
+    <div id="consentBlock" style="margin-top:16px; text-align:left;">
+        <label style="font-size:14px; display:flex; align-items:flex-start; gap:8px;">
+            <input
+                    type="checkbox"
+                    id="consentCheck"
+                    onclick="unlockYes()"
+                    disabled
+            >
+            <span>
+      I have read and accept the
+      <a href="agreement.html" onclick="markAgreementViewed()" style="color:#ff4b5c;">
+        privacy acknowledgement ❤️
+      </a>
+    </span>
+        </label>
+    </div>
+
+    <button id="yesBtn" onclick="yes()" disabled>YES 😍</button>
+    <button onclick="no()">NO 😅</button>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    if (localStorage.getItem("agreementAccepted") === "true") {
+      document.getElementById("consentCheck").disabled = false;
+    }
+</script>
+
+
+
+</body>
+</html>
